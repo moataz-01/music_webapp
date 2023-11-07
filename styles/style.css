@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2C3E50;
+}
+
+.music-player {
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.player-container {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.player-info h1 {
+    margin-top: 0;
+}
+
+.player-info img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.controls button {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    padding: 15px;
+    margin: 15px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.controls input {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin: 10px;
+}
+
+#playlist li:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-container">
+            <div class="player-info">
+                <h1>Music Player</h1>
+                <p class="current-song">Now Playing: </p>
+                <img id="song-image" src="" alt="" style="width: 300px;">
+            </div>
+            <div class="controls">
+                <button id="prevBtn"><i class="fa-solid fa-play fa-flip-horizontal fa-2xl" style="color: #deddda;"></i></button>
+                <button id="playBtn"><i class="fa-solid fa-play fa-2xl" style="color: #deddda;"></i>   </button>
+                <button id="nextBtn"><i class="fa-solid fa-forward fa-2xl" style="color: #deddda;"></i></button>
+                <input type="range" id="seekBar" value="0">
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+        <ul id="playlist">
+            <!-- Add your songs here -->
+            <li data-src="music/song1.mp3" data-img="imgs/image1.jpg">Song 1</li>
+            <li data-src="music/song2.mp3" data-img="imgs/image2.jpg">Song 2</li>
+            <li data-src="music/song3.mp3" data-img="imgs/image3.png">Song 3</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
